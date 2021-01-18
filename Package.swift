@@ -20,6 +20,6 @@ let package = Package(
         .package(name: "Swifter", url: "https://github.com/httpswift/swifter.git", .upToNextMajor(from: "1.5.0"))
     ],
     targets: [
-         .binaryTarget(name: "AlltKit", url: "https://github.com/allt-tv/AlltKit-SP/releases/download/v1.0/AlltKit-1.0.zip", 1.0checksum: "0f17bffd0065e146274f210f6c814f98d3f8da51b6c45a2282ec44c38fdf5104")
+          .binaryTarget(name: "AlltKit", url: "https://github.com/allt-tv/AlltKit-SP/releases/download/v1.0/AlltKit-1.0.zip", 1.01.0checksum: "dceed38581dbdfbc760948c98e26c7f6fcdc515729d2edc45bd30653d8998427")
     ]
 )
