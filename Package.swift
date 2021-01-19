@@ -11,15 +11,14 @@ let package = Package(
     products: [
         .library(
             name: "AlltKit",
-            type: .dynamic,
             targets: ["AlltKit"])
     ],
     dependencies: [
-        .package(url: "https://github.com/robbiehanson/CocoaAsyncSocket", from: "7.6.4"),
-        .package(url: "https://github.com/tadija/AEXML.git", from: "4.6.0"),
-        .package(name: "Swifter", url: "https://github.com/httpswift/swifter.git", .upToNextMajor(from: "1.5.0"))
+        .package(url: "https://github.com/robbiehanson/CocoaAsyncSocket", .exact("7.6.5")),
+        .package(url: "https://github.com/tadija/AEXML.git", .exact("4.6.0")),
+        .package(name: "Swifter", url: "https://github.com/httpswift/swifter.git", .exact("1.5.0"))
     ],
     targets: [
-          .binaryTarget(name: "AlltKit", url: "https://github.com/allt-tv/AlltKit-SP/releases/download/v1.0/AlltKit-1.0.zip", 1.01.0checksum: "dceed38581dbdfbc760948c98e26c7f6fcdc515729d2edc45bd30653d8998427")
+              .binaryTarget(name: "AlltKit", url: "https://github.com/allt-tv/AlltKit-SP/releases/download/v1.0/AlltKit-1.0.0.zip", checksum: "6fef0641f4ce19034099a15ca4bb91f2c79080a309b6b7ec69b2212e858483f6")
     ]
 )
