@@ -1,0 +1,6 @@
+framework module AlltKit {
+  umbrella header "AlltKit.h"
+
+  export *
+  module * { export * }
+}
